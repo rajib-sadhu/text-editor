@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        button{
+            cursor: pointer;
+        }
+        button:focus{
+            background-color: rgb(208, 239, 255);
+            border-radius: 5px;
+        }
+    </style>
+
+    <title>Text Editor</title>
+</head>
+<body>
+    
+    <section class="bg-slate-300 md:w-9/12 mx-auto md:mt-24 md:p-10 p-3">
+
+        <!-- Title Section -->
+        <h1 class="text-center pb-5 md:text-3xl text-xl uppercase font-bold" >My Text Editor</h1>
+        
+        <!-- Editor Section -->
+        <div class="bg-sky-300 flex flex-col border-black border-2 p-3">
+            <!-- Editor Button Section -->
+            <div class="md:flex justify-between p-3 border-b-2 border-black">
+                <div class="space-x-2">
+
+                    <button id="bold-Style" class="font-extrabold p-1">B</button>
+                    <button id="italic-style" class="italic p-1 font-serif">I</button>
+                    <button id="underline-style" class="underline p-1 font-semibold">U</button>
+                </div>
+                <div class=" space-x-2 md:mb-0 mb-2">
+                    <button id="text-left" ><i class="fa-solid fa-align-left p-1"></i></button>
+                    <button id="text-center" ><i class="fa-solid fa-align-center p-1"></i></button>
+                    <button id="text-right" ><i class="fa-solid fa-align-right p-1"></i></button>
+                    <button id="text-justify" ><i class="fa-solid fa-align-justify p-1"></i></button>
+                </div>
+                <div class="space-x-2">
+
+                    <select class="font-medium focus:outline-none" name="" id="text-transform">
+                        <option value="none" selected>--</option>
+                        <option value="capitalize">Aa</option>
+                        <option value="uppercase">AA</option>
+                        <option value="lowercase">aa</option>
+                    </select>
+
+                    <input type="number" min="12" value="16" class="px-1 w-12 focus:outline-none" id="text-size">
+
+                    <input type="color" name="" id="text-color">
+
+                </div>
+            </div>
+            <!-- Write Text Section -->
+            <div class="md:py-2 md:m-5 mt-3 bg-white">
+                <textarea spellcheck="false" class="w-full h-72 focus:outline-none md:p-4 p-1 resize-none" name="" id="text-area-input" placeholder="Wtrite here...." cols="30" rows="10"></textarea>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./textEditor.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>
